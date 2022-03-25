@@ -11,15 +11,13 @@ import com.google.gson.Gson;
 
 
 public class TestServlet extends HttpServlet {
-
+    //Tomcat abiarazteko beharrezko du .war karpeta bat -->
     private MySQLdb mySQLdb;
 
     public TestServlet() {
         super();
         mySQLdb = new MySQLdb();
     }
-
-
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -43,8 +41,6 @@ public class TestServlet extends HttpServlet {
                 } else {
                     http_out.println("Parametroak ez dira ondo bidali!");
                 }
-
-
                 //http://localhost:8080/MezuTaula/servlet/TestServlet?type=getUsername
             } else if (type.equals("getUsername")) {
                 System.out.println("\tgetUsername has been called");

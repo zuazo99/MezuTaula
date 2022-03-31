@@ -18,7 +18,7 @@
     </header>
 
     <section>
-        <form method="post" action="/mezuTaula/servlet/LoginServlet">
+        <form method="post" action="/MezuTaula/servlet/LoginServlet">
             <table>
                 <tr>
                     <td>Email</td>
